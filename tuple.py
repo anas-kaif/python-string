@@ -1,0 +1,5 @@
+tup=(1,3,5,"mango")
+s=tup.index(5)
+print(tup)
+print(list(tup))
+print(s)
