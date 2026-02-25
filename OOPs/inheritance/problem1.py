@@ -1,14 +1,14 @@
 class Person:
-    name=None
+    def __init__(self,name):
+        self.name=name
     def display(self):
-        print("Person name:",self.name)
+        print("Name:",self.name)
 class Student(Person):
-    roll_no=None
+    def __init__(self,name,roll):
+        super().__init__(name)
+        self.roll=roll
     def Show_Student(self):
-        print("Student name:",self.name)
-        print("Student Roll No.:",self.roll_no)
-s1=Student()
-s1.name="Anas"
-s1.display()
-s1.roll_no="23btcs036hy"
+        super().display()
+        print("Roll:",self.roll)
+s1=Student("Anas","23BTCS036HY")
 s1.Show_Student()
