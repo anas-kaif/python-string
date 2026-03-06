@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses - Student Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background: #f4f4f9;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #1abc9c;
+        }
+        .container {
+            padding: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #1abc9c;
+            color: white;
+            padding: 12px;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        .btn {
+            padding: 8px 15px;
+            background: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #16a085;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Available Courses</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/students">Students</a>
+        <a href="/courses">Courses</a>
+        <a href="/admin">Admin</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Course List</h2>
+        <table>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Duration</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>C101</td>
+                <td>Python Programming</td>
+                <td>3 Months</td>
+                <td><a href="/enroll/C101" class="btn">Enroll</a></td>
+            </tr>
+            <tr>
+                <td>C102</td>
+                <td>Web Development (Flask)</td>
+                <td>4 Months</td>
+                <td><a href="/enroll/C102" class="btn">Enroll</a></td>
+            </tr>
+            <tr>
+                <td>C103</td>
+                <td>Database Management (MySQL)</td>
+                <td>2 Months</td>
+                <td><a href="/enroll/C103" class="btn">Enroll</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Student Management System | Developed with Flask</p>
+    </footer>
+</body>
+</html>
